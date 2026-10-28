@@ -1,0 +1,2 @@
+id,klant_pseudoniem,leverancier_product,jobnaam,frequentie,verwacht_tijdstip,mail_onderwerp_patroon,status_in_mail,notitie
+1,Klant-A,Leverancier-1,Voorbeeld nightly,dagelijks,01:00-06:00,"[Success] Job ...",onderwerp,voorbeeldrij - vervangen

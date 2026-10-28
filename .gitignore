@@ -1,0 +1,17 @@
+# Privacy: nooit committen
+*.pst
+*.eml
+*.msg
+secrets/
+.env
+*api-key*
+*wachtwoord*
+data/raw/
+screenshots-ongeanonimiseerd/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.tmp
+~$*

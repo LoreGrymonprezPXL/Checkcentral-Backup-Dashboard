@@ -1,0 +1,2 @@
+check_naam,afzender,onderwerp_bevat,body_bevat,success_indicator,warning_indicator,error_indicator,venster_start,venster_eind,tolerantie_min,getest
+Klant-A - Leverancier-1 - Voorbeeld nightly,backup@example.com,Voorbeeld,,Success,Warning,Failed,01:00,06:00,30,nee
