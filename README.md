@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| **Student** | Lore Grymonprez] |
+| **Student** | Lore Grymonprez |
 | **Opleiding** | Graduaat Systeem- en Netwerkbeheer (SNE), Hogeschool PXL |
 | **Bedrijf** | Lipa ICT |
 | **Werkplekcoach** | Edwin Vanspauwen |
@@ -63,7 +63,7 @@
 - **Branches**: `main` = stabiel/inleverbaar, `fase/<nummer>-<naam>` voor werk per fase, merge via PR.
 - **Issues/Milestones** per fase (zie `docs/02-plan-van-aanpak.md`).
 
-## ⚠️ Privacy
+## Privacy
 
 Deze repo mag **geen echte klantgegevens, hostnamen, IP's, wachtwoorden of API-keys** bevatten. Gebruik pseudoniemen (`Klant-A`, `SRV-01`) en geanonimiseerde screenshots. Zie `docs/09-gdpr-analyse.md` en `.gitignore`.
 
