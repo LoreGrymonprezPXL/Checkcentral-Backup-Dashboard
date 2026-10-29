@@ -1,4 +1,4 @@
-# CheckCentral — Centraal back-updashboard bij Lipa ICT
+# Geautomatiseerde back-upmonitoring via CheckCentral bij Lipa ICT
 
 > Graduaatsproef Systeem- en Netwerkbeheer · Hogeschool PXL
 
@@ -13,11 +13,11 @@
 
 ## Samenvatting (STAR)
 
-**Situatie** – Lipa ICT ontvangt dagelijks back-upmeldingen van ca. 125 actieve back-upjobs over meer dan 15 systemen/leveranciers. De opvolging gebeurde handmatig via een Excel-overzicht.
+**Situatie** – Lipa ICT ontvangt dagelijks back-upmeldingen van ca. 125 actieve back-upjobs over 12 softwaretypes (o.a. N-able Cove, Backup Assist, Avepoint, Synology, Veeam, Iperius). De opvolging gebeurde handmatig via een Excel-overzicht.
 
 **Taak** – Een betrouwbare, geautomatiseerde oplossing opzetten die laagdrempelig en onderhoudbaar is voor collega-systeembeheerders zonder programmeerkennis.
 
-**Actie** – [CheckCentral](https://www.checkcentral.cc) evalueren tijdens een proefperiode van 60 dagen, ca. 126 matching rules per leverancier/klant uitschrijven, dead man's switches configureren (bv. nachtvenster 01:00–06:00), alle scenario's testen (Success, Warning, Error, Missing) en overdragen aan support met handleiding.
+**Actie** – [CheckCentral](https://www.checkcentral.cc) evalueren tijdens een proefperiode van 60 dagen, matching rules per leverancier uitschrijven (enkel klanten met contract, gefaseerd in waves), dead man's switches configureren (bv. nachtvenster 01:00–06:00), alle scenario's testen (Success, Warning, Error, Missing) en overdragen aan support met handleiding.
 
 **Resultaat** – Eén dashboard waarop support in één oogopslag de status van alle back-ups ziet; minder fouten, structurele tijdwinst.
 

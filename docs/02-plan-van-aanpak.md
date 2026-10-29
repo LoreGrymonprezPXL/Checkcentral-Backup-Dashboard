@@ -1,70 +1,135 @@
 # 2. Plan van aanpak
 
-> Weging: 5% · Deadline: **1 november 2026**
+> Titel: **Geautomatiseerde back-upmonitoring via CheckCentral bij Lipa ICT** (64 tekens)
+> Student: Lore Grymonprez · Werkplekcoach: Edwin Vanspauwen · PXL-coach: Klaas Thys
+> Versie: 29 oktober 2026 · Deadline: **1 november 2026**
+>
+> De volledige, ingediende versie staat in het Claude Doc / Blackboard. Dit bestand is de samenvatting voor de repo.
+> **Geen klantnamen of hostnamen in deze repo.**
 
-## 2.1 Fasen, deliverables en mijlpalen
+## 2.1 Weken (projectweken)
 
-| # | Fase | Activiteiten | Deliverable | Timing | Betrokkenen |
+| Week | Datum | Week | Datum |
+|---|---|---|---|
+| 6 | 26 okt–1 nov | 13 | 14–20 dec |
+| 7 | 2–8 nov | 14 | 21–27 dec |
+| 8 | 9–15 nov | 15 | 28 dec–3 jan |
+| 9 | 16–22 nov | 16 | 4–10 jan |
+| 10 | 23–29 nov | 17 | 11–17 jan |
+| 11 | 30 nov–6 dec | 18 | 18–24 jan |
+| 12 | 7–13 dec | | |
+
+## 2.2 Fasen volgens de onderzoekscyclus
+
+| Fase | Onderdeel | Periode | Deliverable | Betrokkenen | Onderzoeksmethode |
 |---|---|---|---|---|---|
-| 1 | Projectvoorstel | Probleemanalyse, scope, kosten- en GDPR-analyse | Projectvoorstel (PDF) | Wk 1–3 | PXL-coach, werkplekcoach |
-| 2 | Plan van aanpak | Fasen, deliverables, Gantt, planning | Plan van aanpak | Wk 4–6 (**1 nov 2026**) | PXL-coach |
-| 3 | Onderzoek/analyse | Inventaris ~125 jobs, mailformaten per leverancier | Overzicht databronnen & mailstructuren | Wk 7–8 | Support, werkplekcoach |
-| 4 | Ontwerp/uitwerking | CheckCentral inrichten, matching rules per leverancier | Ingerichte testomgeving | Wk 9–10 | Werkplekcoach |
-| 5 | Realisatie | Alle back-ups koppelen, dead man's switches | Volledig operationeel dashboard | Wk 11–12 | Support |
-| 6 | Testen & bijsturen | Success/Warning/Error/Missing simuleren | Testrapport + validatie alerts | Wk 13 | PXL-coach, werkplekcoach |
-| 7 | Rapport | Eindrapport, reflecties, STAR | Definitief rapport (**17 jan 2027**) | Wk 14 | PXL-coach |
-| 8 | Presentatie | Slides, verdediging, demo/overdracht | Slides + werkplekdemo | Wk 14+ | Jury, collega's |
+| 1 | Probleemstelling en analyse | t.e.m. wk 6 | Projectvoorstel, plan van aanpak | PXL-coach, werkplekcoach | Analyse bestaande werkwijze |
+| 2 | Onderzoeksuitvoering: documentatie, beginsituatie, Free tier, demo | wk 7–9 | Inventaris, mailanalyse, demo-verslag | Support engineers, werkplekcoach, CheckCentral-support | Literatuurstudie, inventarisatie, observatie, interview, vergelijking |
+| 3.1 | Design | wk 9–10 | Ontwerpdocument | Werkplekcoach, support engineers | Vergelijking (mail versus directe integratie) |
+| 3.2 | Implementatie: Wave 1 (Cove), Wave 2, optioneel Autotask | wk 10–15 | Operationeel dashboard | Support engineers, werkplekcoach | Iteratief per batch |
+| 3.3 | Testing en schaduwdraaien | wk 11–16 | Testrapport | Support engineers, werkplekcoach, PXL-coach | Testscenario's, schaduwdraaien |
+| 3.4 | Documentatie en overdracht | wk 12–16 | Beheerhandleiding, overdracht | Support engineers, collega-systeembeheerders | Observatie nieuwe gebruiker |
+| 3.5 | Maintenance en evaluatie proefperiode | wk 16–18 | Advies over abonnement | Werkplekcoach, verantwoordelijke Lipa ICT | n.v.t. |
+| 4 | Rapporteren | wk 11–17 | Eindrapport (17 jan 2027) | PXL-coach, werkplekcoach | n.v.t. |
+| 5 | Reflecteren en presentatie | wk 16–18 en daarna | Reflectie, slides, demo | Jury, werkplekcoach, collega's | n.v.t. |
 
-## 2.2 Gantt (indicatief, wekenummer = projectweek)
+## 2.3 Scope
+
+**Binnen:** enkel klanten met onderhouds- of back-upcontract · uitrol in waves (Wave 1 = N-able Cove, Wave 2 = overige software) · matching rules, schedules (dead man's switch), dashboards, testen, handleiding, overdracht.
+**Extra (stretch):** Autotask-koppeling (ticket openen bij Error/Warning/Missing, sluiten bij Success).
+**Buiten:** klanten zonder contract, maatwerk webapps, databases, extra servers, zware scripts; software zonder standaardmail (Xcopy, PowerShell/Robocopy, Proxmox, BackupNet2Access) tenzij het onderzoek anders uitwijst.
+
+## 2.4 Gantt-chart
 
 ```mermaid
 gantt
-    title Graduaatsproef CheckCentral
-    dateFormat  X
-    axisFormat  Wk %s
-    section Documenten
-    Projectvoorstel        :a1, 1, 3
-    Plan van aanpak        :a2, 4, 3
-    section Uitvoering
-    Onderzoek/inventaris   :b1, 7, 2
-    Ontwerp                :b2, 9, 2
-    Realisatie             :b3, 11, 2
-    Testen                 :b4, 13, 1
+    title Graduaatsproef CheckCentral (okt 2026 - jan 2027)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d/%m
+    section Document
+    Plan van aanpak                :a1, 2026-10-26, 2026-11-01
+    section Onderzoek
+    Documentatie en beginsituatie  :b1, 2026-11-02, 2026-11-22
+    Free tier en demo              :b2, 2026-11-09, 2026-11-22
+    section Bouwen
+    Design                         :c1, 2026-11-16, 2026-11-29
+    Enterprise-proef 60 dagen      :c2, 2026-11-23, 2027-01-22
+    Wave 1 N-able Cove             :c3, 2026-11-23, 2026-12-06
+    Wave 2 overige software        :c4, 2026-11-30, 2026-12-20
+    Autotask optioneel             :c5, 2026-12-14, 2027-01-03
+    Testen en schaduwdraaien       :c6, 2026-11-30, 2027-01-10
+    Handleiding                    :c7, 2026-12-07, 2027-01-10
+    Buffer kerstperiode            :c8, 2026-12-21, 2027-01-03
+    Overdrachtstraining            :c9, 2027-01-04, 2027-01-10
+    Maintenance en evaluatie       :c10, 2027-01-04, 2027-01-24
     section Afronding
-    Rapport                :c1, 14, 1
-    Presentatie            :c2, 14, 2
+    Rapport schrijven              :d1, 2026-11-30, 2027-01-17
+    Reflectie                      :d2, 2027-01-04, 2027-01-17
+    Presentatie voorbereiden       :d3, 2027-01-11, 2027-01-24
+    section Mijlpalen
+    Plan van aanpak ingediend      :milestone, m1, 2026-11-01, 0d
+    Ontwerp goedgekeurd            :milestone, m2, 2026-11-29, 0d
+    Gerealiseerd resultaat         :milestone, m3, 2027-01-10, 0d
+    Rapport ingediend              :milestone, m4, 2027-01-17, 0d
 ```
 
-> Pas aan naar echte kalenderweken zodra de planning met de coach vastligt.
+### Mijlpalen
 
-## 2.3 Randvoorwaarden
-- Max. **4u/week** op de werkplek, geregistreerd in **OnStage** ("Graduaatsproef").
-- Opleverbaar gerealiseerd resultaat (50%): werking, testing, handleiding, overdracht.
-- GitHub-repo met verzorgde README, beslissingslog en heldere commit-historie.
-- Jury: 15 min presentatie + 10 min vragen (verplicht om te slagen).
+| Mijlpaal | Week | Datum |
+|---|---|---|
+| Plan van aanpak ingediend | 6 | 1 nov 2026 |
+| Beginsituatie en contractklanten bevestigd | 8 | 15 nov 2026 |
+| Demo CheckCentral gehouden | 9 | ± 22 nov 2026 |
+| Ontwerp goedgekeurd, Enterprise-proef start | 10 | ± 29 nov 2026 |
+| Wave 1 live | 11 | ± 6 dec 2026 |
+| Wave 2 live | 13 | ± 20 dec 2026 |
+| Gerealiseerd resultaat afgerond | 16 | 10 jan 2027 |
+| Eindrapport ingediend | 17 | 17 jan 2027 |
+| Presentatie klaar, proefperiode eindigt | 18 | ± 22–24 jan 2027 |
 
-## 2.4 Kwaliteitscriteria (Definition of Done)
-- [ ] Alle actieve back-upjobs gekoppeld aan een check
-- [ ] Elke job heeft correcte matching rule + status-mapping
-- [ ] Dead man's switch met tijdvenster per relevante job
-- [ ] 4 scenario's (Success/Warning/Error/Missing) getest en gedocumenteerd
-- [ ] Handleiding gevalideerd door ≥ 2 support engineers
-- [ ] Overdracht uitgevoerd en afgetekend
-- [ ] GDPR-conclusie bevestigd door verantwoordelijke binnen Lipa ICT
+## 2.5 Afhankelijkheden, feedback en buffer
 
-## 2.5 Risicoregister
+- De demo bepaalt of Wave 1 via directe integratie of e-mail loopt; het design start na de demo.
+- De Enterprise-proef (60 dagen) start pas na een goedgekeurd ontwerp, zodat ze de uitrol, het rapport en de periode rond de jury dekt.
+- Wave 2 start nadat de pilot in Wave 1 loopt.
+- Schaduwdraaien duurt minstens twee volledige weken (wk 13–16), zodat wekelijkse jobs twee keer voorkomen.
+- Autotask is optioneel en vervalt als de kern vertraagt.
+- Feedback: wekelijks met de werkplekcoach; vijf check-ins met de PXL-coach (voorlopig wk 7, 10, 13, 16, 17); validatie door support engineers na elke wave.
+- Buffer: wk 14–15 (kerst) zijn buffer en schrijftijd.
+- Tijd: max. 4 uur per week op de werkplek (OnStage, *Graduaatsproef*).
 
-| ID | Risico | Kans | Impact | Maatregel |
-|---|---|---|---|---|
-| R1 | Mailformaat leverancier niet parsebaar | M | H | Vroeg inventariseren, fallback: forward-rule/aangepast onderwerp |
-| R2 | GDPR-bezwaar tegen externe verwerking | L–M | H | Vroeg afstemmen, DPA nazien, mailinhoud minimaliseren/filteren |
-| R3 | Proefperiode (60d) verloopt vóór afronding | M | M | Proef pas starten bij realisatie-fase; kostenakkoord vooraf |
-| R4 | Te veel false positives → alert-moeheid | M | M | Tijdvensters bijstellen met support-feedback |
-| R5 | Tijdgebrek (4u/week) | H | M | Weekplanning, prioriteren per leverancier-batch |
-| R6 | Klantdata lekt in repo | L | H | `.gitignore`, anonimiseren, review voor commit |
+## 2.6 Definition of Done
 
-## 2.6 Communicatie
-Wekelijks korte update aan werkplekcoach; mijlpaalcontact met PXL-coach. Notities in `logboek/`.
+- [ ] Alle back-ups van contractklanten gekoppeld aan een check (via mail of directe integratie)
+- [ ] Matching rule en statusmapping per softwaretype
+- [ ] Schedules (dead man's switch) per relevante check
+- [ ] Scenario's Success, Warning, Error en Missing getest en gedocumenteerd
+- [ ] Schaduwdraaien minstens twee weken uitgevoerd
+- [ ] Handleiding gevalideerd door minstens twee support engineers
+- [ ] Overdracht afgetekend door de werkplekcoach
+- [ ] Privacy-conclusie bevestigd door een verantwoordelijke bij Lipa ICT
 
-## 2.7 Issues/Milestones op GitHub
-Maak één milestone per fase (1–8) en issues per deliverable. Zie `.github/ISSUE_TEMPLATE/`.
+## 2.7 Risicoregister
+
+| Risico | Impact | Kans | Maatregel |
+|---|---|---|---|
+| Aantal checks hoger dan ondergrens | Middel | Middel | Mailanalyse in fase 2; kostenraming bijwerken |
+| Mailformaat niet te parsen | Middel | Middel | Flexibele rules; unmatched-inbox; vroeg testen in Free tier |
+| Software zonder standaardmail | Laag | Hoog | Vroeg in kaart brengen; zonder script buiten scope |
+| Onterechte meldingen | Hoog | Laag | Ruime marges in schedules; bijsturen na schaduwdraaien |
+| Directe integratie Cove werkt anders dan verwacht | Middel | Laag | E-mailparsing als terugval; keuze in beslissingslog |
+| Autotask-koppeling faalt | Laag | Laag | Stretch; mail blijft de basis |
+| Proefperiode eindigt vóór de jury (± 22 jan) | Middel | Middel | Tijdig verlenging vragen of betalend abonnement |
+| Te weinig werkplektijd | Middel | Middel | Waves, buffer, werk bundelen |
+| Klantnamen of hostnamen in repo, rapport of presentatie | Hoog | Laag | Pseudoniemen, geanonimiseerde screenshots, nalezen door werkplekcoach |
+
+## 2.8 Afstemming met de werkplek
+
+- [ ] Planning en fasering besproken met Edwin Vanspauwen
+- [ ] Aanpak, waves en scope (enkel contractklanten) haalbaar bevonden
+- [ ] Informatie mag gedeeld worden met de externe jury (Lipa ICT mag vermeld worden; klantnamen en hostnamen niet)
+- [ ] Privacy-conclusie (laag risico, technische meldingen) bevestigd door een verantwoordelijke bij Lipa ICT
+
+## 2.9 GitHub-milestones
+
+Maak per fase een milestone aan (fase 1, 2, 3.1 … 5) en per deliverable een issue (zie `.github/ISSUE_TEMPLATE/`).
