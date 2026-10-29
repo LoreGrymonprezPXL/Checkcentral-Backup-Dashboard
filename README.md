@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| **Student** | [Voornaam Naam] |
+| **Student** | Lore Grymonprez] |
 | **Opleiding** | Graduaat Systeem- en Netwerkbeheer (SNE), Hogeschool PXL |
 | **Bedrijf** | Lipa ICT |
 | **Werkplekcoach** | Edwin Vanspauwen |
