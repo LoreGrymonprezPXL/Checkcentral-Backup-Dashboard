@@ -1,3 +1,10 @@
+---
+status: concept
+aangemaakt: 2026-10-28
+gepland_start: TODO
+gepland_einde: TODO
+---
+
 # 6. Testrapport
 
 ## 6.1 Testdoelen

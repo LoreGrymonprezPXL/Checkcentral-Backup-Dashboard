@@ -1,3 +1,10 @@
+---
+status: concept
+aangemaakt: 2026-10-28
+gepland_start: TODO
+gepland_einde: TODO
+---
+
 # 8. Overdracht
 
 ## 8.1 Overdrachtssessie

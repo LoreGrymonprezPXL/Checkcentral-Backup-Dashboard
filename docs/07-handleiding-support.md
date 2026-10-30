@@ -1,3 +1,10 @@
+---
+status: concept
+aangemaakt: 2026-10-28
+gepland_start: TODO
+gepland_einde: TODO
+---
+
 # 7. Handleiding voor support engineers
 
 > Doelgroep: systeembeheerders **zonder programmeerkennis**.

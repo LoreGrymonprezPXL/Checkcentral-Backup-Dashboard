@@ -1,3 +1,10 @@
+---
+status: concept
+aangemaakt: 2026-10-28
+gepland_start: TODO
+gepland_einde: TODO
+---
+
 # 1. Projectvoorstel
 
 > Weging: 5%. Bij **NO GO** → herwerking binnen 1 week. Een onvoldoende = geen deelname.

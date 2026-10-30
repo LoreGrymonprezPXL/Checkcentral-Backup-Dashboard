@@ -1,3 +1,10 @@
+---
+status: concept
+aangemaakt: 2026-10-28
+gepland_start: TODO
+gepland_einde: TODO
+---
+
 # 9. GDPR-toetsing
 
 > Geen juridisch advies. Doel: een onderbouwde risicoanalyse, bevestigd door de verantwoordelijke binnen Lipa ICT.

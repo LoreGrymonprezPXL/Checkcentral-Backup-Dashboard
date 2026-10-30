@@ -1,3 +1,10 @@
+---
+status: concept
+aangemaakt: 2026-10-28
+gepland_start: TODO
+gepland_einde: TODO
+---
+
 # 4. Ontwerp & matching rules
 
 ## 4.1 Conceptueel ontwerp

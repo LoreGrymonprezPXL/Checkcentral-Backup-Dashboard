@@ -1,3 +1,10 @@
+---
+status: concept
+aangemaakt: 2026-10-28
+gepland_start: TODO
+gepland_einde: TODO
+---
+
 # 3. Onderzoek & inventaris (beginsituatie)
 
 ## 3.1 Doel

@@ -1,3 +1,10 @@
+---
+status: concept
+aangemaakt: 2026-10-28
+gepland_start: TODO
+gepland_einde: TODO
+---
+
 # 2. Plan van aanpak
 
 > Titel: **Geautomatiseerde back-upmonitoring via CheckCentral bij Lipa ICT** (64 tekens)
