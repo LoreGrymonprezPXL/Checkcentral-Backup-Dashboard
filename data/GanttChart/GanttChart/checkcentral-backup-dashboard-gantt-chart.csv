@@ -1,0 +1,23 @@
+ID,Task,Type,Start,End,Days,Progress %,Depends on,Owner,Critical,Slack days
+1,"Fase 1 - Probleemstelling, analyse en plan van aanpak",task,2026-09-21,2026-11-01,42,0,,,no,91
+2,Verslag check-in 1 ,milestone,2026-10-04,2026-10-04,0,0,,,no,119
+21,Projectvoorstel                 ,milestone,2026-10-11,2026-10-11,0,0,,,no,112
+22,Verslag check-in 2,milestone,2026-10-25,2026-10-25,0,0,,,no,98
+23,Plan van aanpak,milestone,2026-11-01,2026-11-01,0,0,,,no,77
+3,Buffer/iteratie - herwerking na feedback of no go,task,2026-10-12,2026-10-25,14,0,,,no,98
+4,Fase 2 - Onderzoek en inventarisatie,task,2026-11-02,2026-11-15,14,0,23,,no,77
+5,Feedbackmoment - check-in 3,milestone,2026-11-15,2026-11-15,0,0,,,no,63
+6,Fase 3.1 - Design,task,2026-11-16,2026-11-29,14,0,5,,no,63
+7,Feedbackmoment - ontwerpcheck en check-in 4,task,2026-11-23,2026-11-29,7,0,,,no,42
+8,Fase 3.2 - Implementatie,task,2026-11-30,2026-12-20,21,0,7,,no,42
+9,Feedbackmoment - check-in 5,milestone,2026-12-13,2026-12-13,0,0,,,no,7
+10,"Fase 3.3 - Testen, schaduwdraaien en itereren",task,2026-12-14,2027-01-10,28,0,9,,no,7
+11,Buffer/risico - technische bijsturing en mogelijke vertraging,task,2026-12-19,2027-01-10,23,0,,,no,21
+12,"Fase 3.4 - Documentatie, overdracht en prijsadvies",task,2026-12-14,2027-01-10,28,0,,,no,7
+13,Mijlpaal - gerealiseerd resultaat,milestone,2027-01-10,2027-01-10,0,0,"10, 12",,no,7
+14,Fase 4 en 5 - Rapporteren en reflecteren,task,2026-11-16,2027-01-17,63,0,,,no,14
+15,Feedback/iteratie - conceptrapport nalezen,task,2027-01-04,2027-01-17,14,0,,,yes,0
+16,Mijlpaal - eindrapport en reflectie,milestone,2027-01-17,2027-01-17,0,0,"13, 15",,yes,0
+17,"Fase 5 - Presentatie, demo en juryvoorbereiding",task,2027-01-18,2027-01-31,14,0,16,,yes,0
+18,Mijlpaal - Juryverdediging - exacte datum te bevestigen,milestone,2027-01-31,2027-01-31,0,0,"13, 17",,yes,0
+19,Optioneel - Autotask-koppeling,task,2026-12-28,2027-01-10,14,0,,,no,21
