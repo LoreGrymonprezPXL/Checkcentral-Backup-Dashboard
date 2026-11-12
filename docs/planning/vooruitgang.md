@@ -12,7 +12,7 @@
 ### 📈 Voortgang per Softwarepakket
 | Software | Methode | Status | Voortgang (Klantgroepen) |
 | :--- | :--- | :--- | :--- |
-| **N-able Cove** | Direct Integration (API) | 🟢 93% | 13 / 14 groepen actief (32 checks) |
+| **N-able Cove** | Direct Integration (API) | 🟢 100% | 15 / 15 groepen actief (34 checks) |
 | **LIPA (Intern)** | E-mail / API (PoC) | 🟢 100% | 8 / 8 taken actief |
 | **BackupAssist** | E-mail (Kloonbaar) | 🟡 7% | 1 / 14 groepen actief |
 | **AvePoint (M365)** | E-mail (Kloonbaar) | 🟡 9% | 1 / 11 groepen actief |
